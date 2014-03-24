@@ -106,8 +106,7 @@ module.exports = function(grunt) {
 
     grunt.task.run('maven:version:' + options.version,
       'maven:package',
-      'maven:deploy-file',
-      'maven:version:' + options.nextVersion + ':deleteTag');
+      'maven:deploy-file');
   }
 
   function getFileNameBase(options) {
